@@ -1,127 +1,128 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <tittle>Technical Document page</tittle>
-  </head>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- <html>
+  <head> <title> Technical Documentation</title></head> -->
 
-<body>
-  <nav id="navbar"> 
-    <ul class="navbar">
-      <ul>
-      <nav id="navbar">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
+
+    <main id="main-doc">
+      <nav id="navbar"> 
         <header>
-          <h1 class="title">Selection:</h1></header>
-    <li><a id="1" class="nav-link" href="#Introduction_of_Html">Introduction of Html</a>
-      
-    <li><a id="2" class="nav-link" href="#Dom">Dom</a></li>
-      
-    <li><a id="3" class="nav-link" href="#Buttons">Buttons</a></li>
-      
-    <li><a id="4" class="nav-link" href="#HTML_document">HTML document</a></li>
-      
-    <li><a id="5" class="nav-link" href="#Tags">Tags</a></li>
-      </ul>
+          Html
+        </header>
+  <a href="#Introduction_of_Html" class="nav-link"> Introduction_of_Html</a>
+        <a href="#Buttons" class="nav-link"> Buttons</a>
+        <a href="#Dom" class="nav-link"> Dom</a>
+        <a href="#Html_document"  class="nav-link"> Html_document</a>
+        <a href="#Tags" class="nav-link"> Tags</a>
       </nav>
-
-
-
-
-  <header>
-  
-   <header class="navbar-header">
-<main id="main-doc">
-  <section id="Introduction_of_Html" class="main-section">
-    <header><h1>Introduction of Html</h1></header>
-<p>HTML is a markup language which is used by the browser to manipulate text, images and other content to display it in required format. HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. </p>
-    
-    <p>HTML Attributes - html elements can have attributes, attributes provide additional information about elements, attributes always specified in the start tag, attributes ussually came</p>
-    <ol>
-<li>The head element contains meta information about the HTML page<li>Is used to tell your web browser what each part of a website is. So, using HTML, you can define headers, paragraphs, links, images, and more, so your browser knows how to structure the web page you're looking at.</ol></section>
- 
-  
-
-  <section id="Dom" class="main-section">
-    <header><h1> Dom </h1></header>
-    <p>The Document Object Model DOM is a programming API for HTML and xml documents. It defines the logical structure of documents and the way a document is accessed and manipulated. <p> The HTML Document Object Model, programmers can create and build documents, navigate their structure, and add, modify, or delete elements and content. Anything found in an HTML or XML document can be accessed, changed, deleted, or added using the Document Object Model, with a few exceptions - in particular, the DOM interfaces for the internal subset and external subset have not yet been specified.</p> 
-    <ol>
-    <li>The HTML DOM model is constructed as a tree of Objects 
-      </li>
-      <li>The HTML DOM Tree of Objects, document, root element </li>
-    </ol>
       
-    <code>
-<h2>finding html elements by id</h2>
-
-<p id="intro">Hello World!</p>
-<p>This example demonstrates the <b>getElementsById</b> method.</p>
-
-<p id="demo"></p>
-<code>
-<script>
-var myElement = document.getElementById("intro");
-document.getElementById("demo").innerHTML = 
-"The text from the intro paragraph is " + myElement.innerHTML;
-</script></code>
-
+      
+      <div id="space"></div>
+      
+      
+      
+      <div id="technical-doc-writting">
+      <section class="main-section" id="Introduction_of_Html" class="nav-link">
+        <header>Introduction_of_Html</header>
+        <p> HTML is the Hypertext markup language which is used by the browser to manipulate text, images and other content to display it in required format. HTML documents from a web server or from local storage and render the documents into multimedia web pages.<p><br></p> HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. </p>
+        
+        <pre><code><!DOCTYPE html>
+  <html>
+  <body>
+  
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+  
+  </body>
+  </html>
+  
+  </code></pre>
+        
+        
+      </section>
+      <section class="main-section" id="Buttons" >
+        <header>Buttons</header>
+        <p>Button, used to submit forms or anywhere in a document for accessible, standard button functionality. By default, HTML buttons are presented in a style resembling the platform the user agent runs on, but you can change buttons' appearance with CSS.
+  <p><br></p>The buttons must be clickable inside a button can put text and tags like i, strong, br, img, e.t.c. its not possible with button created with the input. always specify the type of atrribute for a button. </p>
+      
+      
+      <pre><code><h1>The Buttons Element</h1>
+  <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+  
+  </code></pre>
    
+        
+      </section>
+      <section class="main-section" id="Dom">
+        
+        
+        <header>Dom</header>
+        <p>The Document Object Model DOM is a programming API for HTML and xml documents. It defines the logical structure of documents and the way a document is accessed and manipulated. <p> The HTML Document Object Model, programmers can create and build documents, navigate their structure, and add, modify, or delete elements and content. Anything found in an HTML or XML document can be accessed, changed, deleted, or added using the Document Object Model, with a few exceptions - in particular, the DOM interfaces for the internal subset and external subset have not yet been specified.<p><br></p> The HTML DOM model is constructed as a tree of Objects </p>
     
-
- <section id="Buttons" class="main-section">
-   <header><h1> Buttons </h1></header>
-   <p>Button, used to submit forms or anywhere in a document for accessible, standard button functionality. By default, HTML buttons are presented in a style resembling the platform the user agent runs on, but you can change buttons' appearance with CSS.
-
-The buttons must be clickable inside a button can put text and tags like i, strong, br, img, e.t.c. its not possible with button created with the input. always specify the type of atrribute for a button.
-      <ol>
-<li>You can easily style buttons with CSS<li>Specifies that a button should automatically get focus when the page loads<li>Specifies which form the button belongs to. </ol>
     
-     <code>
-<h1>The Buttons Element</h1>
-
-<button type="button" onclick="alert('Hello world!')">Click Me!</button></code>
-    <br></br>
+    <pre><code><h2>finding html elements by id</h2>
+  <p id="intro">Hello World!</p>
+  <p>This example demonstrates the <b>getElementsById</b> method.</p>
+  <p id="demo"></p>
+  <code>
+  <p id="intro">Hello World!</p>
+  <p>This example demonstrates the <b>getElementsById</b> method.</p>
+  <p id="demo"></p>
+  <script>
+  var myElement = document.getElementById("intro");
+  document.getElementById("demo").innerHTML =
+  "The text from the intro paragraph is " + myElement.innerHTML;
+  </script>
   
-
-  <section id="HTML_document" class="main-section">
-    <header><h1>HTML document </h1></header>
-    <p>An HTML document has two* main parts: head. The head element contains title and meta data of a web document. The body element contains the information that you want to display on a web page. head. The head element contains title and meta data of a web document body. The body element contains the information that you want to display on a web page.
-
-    <p> To make your web pages compatible with HTML 4, you need to add a document type declaration DTD before the HTML element. Many web authoring software add DTD and basic tags automatically when you create a new web page.</p>
+  </code></pre>
+        
+        
+      </section>
+      <section class="main-section" id="Html_document">
+        
+        
+        
+        <header>Html_document</header>
+        <p>An HTML document has two main parts head. The head element contains title and meta data of a web document. The body element contains the information that you want to display on a web page. head. The head element contains title and meta data of a web document body. The body element contains the information that you want to display on a web page.<p><br></p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. To make your web pages compatible with HTML 4, you need to add a document type declaration DTD before the HTML element. Many web authoring software add DTD and basic tags automatically when you create a new web page.</p>
   
-    <ol>
-<li>In a web page, the first tag specifically indicates the markup language that is being used for the document.<li>The head tag contains information about the web page. Lastly, the content appears in the body tag.<li>The tags, in other words, will determine whether the text will be bold, black or blue, or of font type Time New Roman or Airal.</ol>
-</p></section>
+  <ul>
+    <li>In a web page, the first tag specifically indicates the markup language that is being used for the document. </li>
+    <li>The head tag contains information about the web page. Lastly, the content appears in the body tag. </li>
+    <li>The tags, in other words, will determine whether the text will be bold, black or blue, or of font type Time New Roman or Airal. </li>
+    <li>This is item list </li>
+    <li>This is item list </li>
+  </ul>
+  
+  <pre><code><title>Page Title</title>
+  <h1>This is a Heading</h1>
+  <p>This is a paragraph</p>
+  
+  </code></pre>
+  
+        
+        
+      </section>
+      <section class="main-section" id="Tags">
+        
+        
+        <header>Tags</header>
+        <p>  tag represents the root of an HTML document. The  tag is the container for all other HTML elements (except for the <! DOCTYPE> tag). Note: You should always include the lang attribute inside the  tag, to declare the language of the Web page. <p><br></p>You use tags to create HTML elements, such as paragraphs or links.
+  
+  Many elements have an opening tag and a closing tag — for example, a p (paragraph) element has a p  tag, followed by the paragraph text, followed by a closing close p tag. </p>
+  
+  <pre><code> </style>
+  <h1>The code element + CSS</h1>
+  <p>The HTML <code>button</code> tag defines a clickable button.</p>
+  <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+  
+  </code></pre>
+  
+        
+        
+        
+      </section>
       
-     <code>
-<title>Page Title</title>
-<h1>This is a Heading</h1>
-<p>This is a paragraph</p>
-</code>
-     
-      
-
-  <section id="Tags" class="main-section">
-    <header><h1>Tags </h1></header>
-    <p>The <html> tag represents the root of an HTML document. The <html> tag is the container for all other HTML elements (except for the <! DOCTYPE> tag). Note: You should always include the lang attribute inside the <html> tag, to declare the language of the Web page.
-    <ol>
-<li> You use tags to create HTML elements, such as paragraphs or links.
-
-Many elements have an opening tag and a closing tag — for example, a p (paragraph) element has a <p> tag, followed by the paragraph text, followed by a closing </p> tag.</ol></p></section>
-    
-    <code></style>
-</head>
-<body>
-
-<h1>The code element + CSS</h1>
-
-<p>The HTML <code>button</code> tag defines a clickable button.</p>
-<p>The CSS <code>background-color</code> property defines the background color of an element.</p>
-
-</body>
-</html></code>
-  
-</main>
-</body>     
-      </html>
-
+    </main>
+  </html>
